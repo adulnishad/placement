@@ -1,0 +1,24 @@
+{%extends 'base.html'}
+
+{%block bodyblock%}
+
+<table>
+
+    <tr>
+        <th>Application Name</th>
+        <th>Application Date</th>
+        <th>Application Status</th>
+        <th>Action</th>
+    </tr>
+    {%for App in data%}
+        <tr>
+            <td>{{data.student}}</td>
+            <td>{{data.applied_data}}</td>
+            <td>{{data.status}}</td>
+        </tr>
+    {%endfor%}
+
+</table>
+
+
+{%endblock%}
